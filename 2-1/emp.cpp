@@ -62,7 +62,7 @@ void emp_getdata()
 
 }
 };
-/*int main()
+int main()
 {
     int i,size;
     cout<<"Enter number of employee: ";
@@ -81,4 +81,4 @@ void emp_getdata()
     }
     return 0;
 
-}*/
+} 
