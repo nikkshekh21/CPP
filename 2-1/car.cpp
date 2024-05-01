@@ -14,9 +14,11 @@ class car
     string car_color;
     string  car_model;
     int car_release_year;
-    void car_setdata()
+    public:  
+    void setdata()
+    
     {
-        
+       
        int i,size;
        for(i=0;i<size;i++)
        {
@@ -34,8 +36,11 @@ class car
     }
         
     }
-    void car_getdata()
+    	public:
+    void getdata()
+    
     {
+    
         cout<<"CAR ID:"<<car_id<<endl;
          cout<<"CAR COMPANY NAME:"<<car_company_name<<endl;
         cout<<"CAR COLOR:"<<car_color<<endl;
@@ -51,17 +56,17 @@ int main()
     int i,size;
     cout<<"Enter number of car detail.: ";
     cin>>size;
-     car a[size];
+     car c[size];
 
     for(i=0;i<size;i++)
     {
-        cout << endl << "Enter details for car " << i + 1 << ":" << endl;
-        a[i].car_setdata();
+        cout << endl << "Enter details for car " << i + 1 << ":" << endl<<endl;
+        c[i].setdata();
     }
     cout << endl << "car details:" << endl<<endl;
     for(i=0;i<size;i++)
     {
-        a[i].car_getdata(); 
+        c[i].getdata(); 
     }
     return 0;
 

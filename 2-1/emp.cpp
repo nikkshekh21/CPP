@@ -48,37 +48,19 @@ void emp_setdata()
     
 
 }
+public:
 void emp_getdata()
 {
-    cout<<"employee ID:"<<emp_id<<endl;
-    cout<<"employee name:"<<emp_name<<endl;
-    cout<<"employee age:"<<emp_age<<endl;
-    cout<<"employee role:"<<emp_role<<endl;
-    cout<<"employee salary:"<<emp_salary<<endl;
-    cout<<"employee city:"<<emp_city<<endl;
-    cout<<"employee experience:"<<emp_experience<<endl;
-    cout<<"employee company name:"<<emp_company_name<<endl;
+    cout<<"EMPLOYEE ID :"<<emp_id<<endl;
+    cout<<"EMPLOYEE NAME :"<<emp_name<<endl;
+    cout<<"EMPLOYEE AGE :"<<emp_age<<endl;
+    cout<<"EMPLOYEE ROLE :"<<emp_role<<endl;
+    cout<<"EMPLOYEE SALARY :"<<emp_salary<<endl;
+    cout<<"EMPLOYEE CITY :"<<emp_city<<endl;
+    cout<<"EMPLOYEE EXPERIENCE :"<<emp_experience<<endl;
+    cout<<"EMPLOYEE COMPANY NAME :"<<emp_company_name<<endl;
 
 
 }
 };
-int main()
-{
-    int i,size;
-    cout<<"Enter number of employee: ";
-    cin>>size;
-    employee a[size];
 
-    for(i=0;i<size;i++)
-    {
-        cout << endl << "Enter details for employee " << i + 1 << ":" << endl;
-        a[i].emp_setdata();
-    }
-    cout << endl << "Employee details:" << endl<<endl;
-    for(i=0;i<size;i++)
-    {
-        a[i].emp_getdata();
-    }
-    return 0;
-
-} 
