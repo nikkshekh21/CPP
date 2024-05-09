@@ -11,7 +11,7 @@ class A
 	string comp_name;
 	string address;
 	string email;
-	double contact;
+	int contact;
 	
 	public:
 		void emp1()
@@ -36,7 +36,7 @@ class B : public A
 	}
 	
 };
-class C : public A
+class C : public B
 {
 	public:
 	void emp3()
@@ -46,10 +46,10 @@ class C : public A
 		cout<<"Enter Employee address : ";
 		cin>>address;
 	}
-	public:
+	
 	void getemp()
 	{
-		cout<<endl<<endl<<"THE EMP DETAILE"<<endl;
+		cout<<endl<<endl<<"THE EMP DETAILE"<<endl<<endl;
 		
 		cout<<"EMPLOYEE NAME :"<<name<<endl;
 		cout<<"EMPLOYEE ROLE :"<<role<<endl;
@@ -58,12 +58,12 @@ class C : public A
 	
 };
 
-class D : public A
+class D : public C
 {
 	public:
 	void emp4()
 	{
-		cout<<"Enter Employee Email : ";
+		cout<<endl<<"Enter Employee Email : ";
 		cin>>email;
 		cout<<"Enter Employee contact : ";
 		cin>>contact;
@@ -71,7 +71,7 @@ class D : public A
 	public:
 	void getemp2()
 	{
-		
+		cout<<endl<<endl<<"THE EMP DETAILE"<<endl<<endl;
 		cout<<"EMPLOYEE ID :"<<id<<endl;
 		cout<<"EMPLOYEE NAME :"<<name<<endl;
 		cout<<"EMPLOYEE ROLE :"<<role<<endl;
@@ -80,7 +80,7 @@ class D : public A
 		cout<<"EMPLOYEE COMPNY NAME :"<<comp_name<<endl;
 		cout<<"EMPLOYEE ADDRESS :"<<address<<endl;
 		cout<<"EMPLOYEE EMAIL :"<<email<<endl;
-		cout<<"EMPLOYEE CONTACT :"<<contact<<endl;
+		cout<<"EMPLOYEE CONTACT :"<< contact <<endl;
 	
 	}
 	
@@ -89,15 +89,14 @@ class D : public A
 int main()
 {
 //	A a1;
-	B a2;
-	C a3;
-	D a4;
-	a2.emp1();
-	a2.emp2();
-	a3.emp3();
+	D d;
+	d.emp1();
+	d.emp2();
+
+	d.emp3();
+	d.getemp();
+	d.emp4();
 	
-	a4.emp4();
-	a3.getemp();
-	a4.getemp2();
+	d.getemp2();
 	return 0;
 }
