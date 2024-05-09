@@ -58,7 +58,7 @@ int main()
      
     for(i=0;i<size;i++)
     {
-        cout << endl << "Enter details for Customer:- " << i + 1 << ":" << endl;
+        cout << endl << "Enter details for Customer:- " << i + 1 << ":" << endl<<endl;
         e[i].setdata();
     }
     cout << endl << "Customer Record details:-" << endl<<endl;

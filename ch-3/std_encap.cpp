@@ -64,4 +64,4 @@ int main()
 	s5.getdata();
     
     return 0;
-}
+}j
