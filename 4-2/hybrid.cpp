@@ -16,7 +16,7 @@ class A
 	}
 	void getdata()
 	{
-		cout << "A : " <<a;
+		cout << "A : " <<a<<endl;
 	}
 };
 
@@ -34,7 +34,7 @@ class B : public A
 	}
 	void getdata1()
 	{
-		cout << "B : " << b;
+		cout << "B : " << b<<endl;
 	}
 		
 
@@ -54,16 +54,15 @@ class C : public A
 	}
 	void getdata2()
 	{
-		cout << "c : " <<c;
+		cout << "c : " <<c <<endl;
 	}
 
 };
 
-class D : public B , C
+class D : public B,C  
 {
     protected :
-	int d;
-	int sum = 0;
+	int d,sum=0;
 
 	public :
 	
@@ -80,16 +79,29 @@ class D : public B , C
 
 	void Sum()
 	{
-		sum = B::a+ b+ c+ d;
+		sum = C::a++b+c+d;
+		
 		cout << "sum : " << sum;
 	}
 
 };
 int main()
 {
-    D d1;
+	A a1;
+	a1.setdata();
+	a1.getdata();
 
-   
+	B b1;
+	b1.setdata1();
+	b1.getdata1();
+	
+	C c1;
+	c1.setdata2();
+	c1.getdata2();
+	
+	D d1;
+	d1.setdata3();
+	d1.getdata3(); 
     d1.Sum();
 
    
