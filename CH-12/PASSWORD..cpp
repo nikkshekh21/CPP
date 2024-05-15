@@ -21,14 +21,14 @@ int main()
 				}
 				else
 	          	{
-	 	        	cout<<"YOUR PASSWORD IS CARRECT !! "<<endl;
+	 	        	cout<<endl<<"YOUR PASSWORD IS CARRECT !! "<<endl;
 	        	}
 	    	}
 		}
 		
 	catch (string pass)
 	{
-		cout <<" YOUR PASSWORD IS MUST BE IN UPPERCASE PLEASE TRY AGAIN ---!!!"<<endl;
+		cout <<endl<<" YOUR PASSWORD IS MUST BE IN UPPERCASE PLEASE TRY AGAIN ---!!!"<<endl;
 	}
 
 	return 0;
