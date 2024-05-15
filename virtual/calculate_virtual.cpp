@@ -21,13 +21,13 @@ class calculate
 			
 		
 	case 1:
-		cout<<"Enter the Radius of circel: ";
+		cout<<endl<<"Enter the Radius of circel: ";
 		cin >>r;
 		area=3.14*r*r;
 		cout<<endl<<endl<<"THE AREA OF A CIRCEL: "<<area<<endl;
 		break;
 	case 2:
-		cout<<"Enter the base  of triangle: ";
+		cout<<endl<<"Enter the base  of triangle: ";
 		cin >>b;
 		cout<<"Enter the height   of triangle: ";
 		cin >>h;
@@ -35,7 +35,7 @@ class calculate
 		cout<<endl<<endl<<"THE AREA OF A TRIANGLE: "<<area2<<endl;	
 		break;
 	case 3:
-		cout<<"Enter the length of rectangle: ";
+		cout<<endl<<"Enter the length of rectangle: ";
 		cin >>l;
 		cout<<"Enter the width  of rectangle: ";
 		cin >>w;
@@ -48,14 +48,6 @@ class calculate
     			
 				}
 			}
-	
-		
-	
-       	
-       
-      	
-		
-		
 	}
 };
 class allarea:public calculate

@@ -44,7 +44,7 @@ class Customer
 
 		void getdata()
 		{
-			cout<<"ID :- "<<id<<endl<<"NAME :- "<<name<<endl<<"AGE :- "<<age<<endl<<"telecome brand name :- "<<telecome_brand_name<<endl<<"mobile number :- "<<mobile_number<<endl<<"CITY :- "<<city<<endl<<"simcard validity :- "<<simcard_validity<<endl;	
+			cout<<"ID\t\t :- "<<id<<endl<<"NAME\t\t :- "<<name<<endl<<"AGE\t\t :- "<<age<<endl<<"TELECOME BRAND NAME \t :- "<<telecome_brand_name<<endl<<"MOBILE NUMBER\t :- "<<mobile_number<<endl<<"CITY\t\t :- "<<city<<endl<<"SIMCARD VALIDITY :- "<<simcard_validity<<endl;	
 		}
 };
 

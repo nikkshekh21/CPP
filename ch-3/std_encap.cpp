@@ -1,67 +1,71 @@
-/* Write a Program to create Student Record System for 5 students using Encapsulation. Consider the below-mentioned attributes in the Student class:
-- stu_id
-- stu_name
-- stu_age
-- stu_course
-- stu_city
-- stu_email
-- stu_college*/
+/* Write a Program to get and display N numbers of Fast Food cafe information using encapsulation and the use of a Default constructor by including the below-mentioned attributes:
+- cafe_id
+- cafe_name
+- cafe_type (like a rooftop or normal)
+- cafe_rating (like 1 Star, 2 Start, ..., 5 Star)
+- cafe_location (city name)
+- cafe_establish_year
+- cafe_staff_quantity*/
 #include<iostream>
 #include<string.h>
 
 using namespace std;
 
-class Student
+class Customer
 {
     private:
-        int id;
- 	    char name[100];
- 		int age;
- 		char course[100];
-		char email[100];
-		char college[100];
-		char city[100];
+        int cafe_id;
+        string cafe_name;
+        string cafe_type; 
+        int cafe_rating; 
+        string cafe_location; 
+        int cafe_establish_year;
+        int  cafe_staff_quantity;
 
 	public :
 		void setdata()
 		{
-			cout<<"Enter your id :- ";
-			cin>>id;
-			cout<<"Enter your name :- ";
-			cin>>name;
-			cout<<"Enter your age :- ";
-			cin>>age;
-			cout<<"Enter your course :- ";
-			cin>>course;
-			cout<<"Enter your email :- ";
-			cin>>email;
-			cout<<"Enter your city :-";
-			cin>>city;
-			cout<<"Enter your college :- ";
-			cin>>college;
+			cout<<"Enter cafe id :- ";
+			cin>>cafe_id;
+			cout<<"Enter cafe name :- ";
+			cin>>cafe_name;
+			cout<<"Enter cafe type :- ";
+			cin>>cafe_type;
+			cout<<"Enter cafe rating  :- ";
+			cin>>cafe_rating;
+			cout<<"Enter cafe  location :- ";
+			cin>>cafe_location;
+			cout<<"Enter cafe establish year  :-";
+			cin>>cafe_establish_year;
+			cout<<"Enter cafe staff quantity  :- ";
+			cin>>cafe_staff_quantity;
 			cout<<"-----------------------"<<endl;
 		}
 
 		void getdata()
 		{
-			cout<<"ID :- "<<id<<endl<<"NAME :- "<<name<<endl<<"AGE :- "<<age<<endl<<"COURSE :- "<<course<<endl<<"EMAIL :- "<<email<<endl<<"CITY :- "<<city<<endl<<"COLLEGE :- "<<college<<endl;	
+			cout<<"ID :- "<<cafe_id<<endl<<"NAME :- "<<cafe_name<<endl<<"TYPE :- "<<cafe_type<<endl<<"RATING :- "<<cafe_rating<<endl<<"LOCATION :- "<<cafe_location<<endl<<"ESTABLISH YEAR :- "<<cafe_establish_year<<endl<<"STAFF QUANTITY :- "<<cafe_staff_quantity<<endl;	
 		}
 };
 
 int main()
 {
-    Student s1,s2,s3,s4,s5;
+	int i,size;
+    cout<<"Enter number of Customer: ";
+    cin>>size;
+    Customer e[size];
+     
+     
+    for(i=0;i<size;i++)
+    {
+        cout << endl << "Enter details for CAFE:- " << i + 1 << ":" << endl<<endl;
+        e[i].setdata();
+    }
+    cout << endl << "CAFE Record details:-" << endl<<endl;
+    for(i=0;i<size;i++)
+    {
+        e[i].getdata();
+    }
+    return 0;   
+}
 
-	s1.setdata();
-	s1.getdata();
-    s2.setdata();
-	s2.getdata();
-	s3.setdata();
-	s3.getdata();
-	s4.setdata();
-	s4.getdata();
-	s5.setdata();
-	s5.getdata();
-    
-    return 0;
-}j
