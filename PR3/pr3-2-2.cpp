@@ -1,6 +1,6 @@
 /*  Write a Program to demonstrate an example of hierarchical inheritance to get the square and cube of a number.*/
 
-}*/#include<iostream>
+#include<iostream>
 using namespace std;
 
 class number {
