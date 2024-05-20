@@ -49,35 +49,22 @@ class leptop:public device
 {
 
     public: 
-	void data()
+	void circle()
 	{
-		
 	
-	
-
-};
-
-	
-		
-
-//class smartphone : public leptop
-//{
+    };
 
 
-	public:
+public:
 	void smart_phone()
 	{
     
-    
-			
+    	
 	}
 };
 int main()
 {
 	leptop l;
-	l.data();
-//	l.smart();
-	//smartphone p;
-//	p.data();
+	l.circle();
 	l.smart_phone();
 }

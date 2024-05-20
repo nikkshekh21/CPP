@@ -7,7 +7,7 @@ class Animal
 	           
    Animal()
 	{
-			cout<<"The fish water  boops!!!!"<<endl;}
+			cout<<"The ANIAML!!!!"<<endl;}
 	
   };
 
