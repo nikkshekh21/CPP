@@ -3,11 +3,12 @@ using namespace std;
 class Animal
 {
 	public:
-	virtual void king(int a)=0;
+	virtual void king()=0;
 	           
    Animal()
 	{
-			cout<<"The ANIAML!!!!"<<endl;}
+			cout<<"The ANIAML!!!!"<<endl;
+    }
 	
   };
 
@@ -16,7 +17,7 @@ class Animal
 class lion : public Animal
 {    
     public:
-	void king(int a)
+	void king()
 	{
 		cout<<"The king sound roar!!!!"<<endl;
 	}
@@ -29,6 +30,7 @@ class lion : public Animal
 int main()
 {
 	lion l;
+	l.king();
 }
 
    
